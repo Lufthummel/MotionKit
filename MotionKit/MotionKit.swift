@@ -58,6 +58,7 @@ import CoreMotion
         var valZ: Double!
         if manager.accelerometerAvailable {
             manager.accelerometerUpdateInterval = interval
+        
             
             manager.startAccelerometerUpdatesToQueue(NSOperationQueue(), withHandler: { (data, error) in
                 if let isError = error {
