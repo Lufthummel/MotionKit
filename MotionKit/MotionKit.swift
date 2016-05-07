@@ -58,9 +58,8 @@ import CoreMotion
         var valZ: Double!
         if manager.accelerometerAvailable {
             manager.accelerometerUpdateInterval = interval
-            manager.startAccelerometerUpdatesToQueue(NSOperationQueue(), withHandler: {
-                (data, error) in
-                
+            
+            manager.startAccelerometerUpdatesToQueue(NSOperationQueue(), withHandler: { (data, error) in
                 if let isError = error {
                     NSLog("Error: %@", isError)
                 }
@@ -74,6 +73,7 @@ import CoreMotion
                 let absoluteVal = sqrt(valX * valX + valY * valY + valZ * valZ)
                 self.delegate?.retrieveAccelerometerValues!(valX, y: valY, z: valZ, absoluteValue: absoluteVal)
             })
+
         } else {
             NSLog("The Accelerometer is not available")
         }

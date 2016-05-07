@@ -161,6 +161,7 @@
 		75FDED4C1A9541F800283A97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = MotionKit;
 				TargetAttributes = {
@@ -399,6 +400,7 @@
 				75FDED6D1A9541F800283A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75FDED6E1A9541F800283A97 /* Build configuration list for PBXNativeTarget "MotionKitTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +409,7 @@
 				75FDED701A9541F800283A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
